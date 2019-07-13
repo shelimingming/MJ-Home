@@ -1,0 +1,32 @@
+.swiper {
+  width:100%;
+}
+
+.slide-image{
+  width:100%;
+}
+
+.head{
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rpx;
+  margin-left: 10rpx;
+}
+
+.title {
+  font-size: 50rpx;
+}
+
+.subtitle{
+
+}
+
+.menu{
+  margin-top: 20rpx;
+}
+
+.menu .menu_list {
+  margin-top: 10rpx;
+  background: #ccc;
+  padding: 20rpx;
+}

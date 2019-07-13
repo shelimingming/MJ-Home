@@ -1,0 +1,23 @@
+<!--pages/list/list.wxml-->
+<view>
+  <view>
+    <text>{{name}}</text>
+  </view>
+
+  <view>
+    <navigator wx:for="{{list}}">
+      <view>
+        <image src="{{item.img}}"></image>
+        <view>
+          <text>{{item.t}}</text>
+          <text>{{item.actors}}</text>
+          <text>{{item.dN}}</text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+
+<block wx:for="{{list}}">
+  <view>{{item.tCn }}</view>
+</block>
+</view>

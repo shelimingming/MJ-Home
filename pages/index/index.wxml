@@ -1,0 +1,41 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+  <!--轮播图-->
+  <view>
+    <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+
+  <!--标题-->
+  <view class="head">
+    <text class="title">MJ's 电影榜单</text>
+    <text class="subtitle">MJ 你值得拥有</text>
+  </view>
+
+  <!--菜单-->
+  <view class="menu">
+    <navigator url="../list/list?type=Showtime/LocationMovies.api&name=正在售票">
+      <view class="menu_list">
+        <text>正在售票</text>
+        <text decode="true">&gt;</text>
+      </view>
+    </navigator>
+    <view class="menu_list">
+      <text>正在热映</text>
+      <text decode="true">&gt;</text>
+    </view>
+    <view class="menu_list">
+      <text>正在上映</text>
+      <text decode="true">&gt;</text>
+    </view>
+  </view>
+
+  
+  
+</view>
